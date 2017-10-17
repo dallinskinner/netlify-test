@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: dallinskinner/netlify-test
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+
+collections:
+  - name: "page"
+    label: "Page"
+    folder: "_pages/page"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Something else", name: "something_else", widget: "string"}
